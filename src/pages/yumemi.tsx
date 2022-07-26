@@ -1,7 +1,8 @@
 import useAspidaSWR from '@aspida/swr'
 import { apiClient } from '~/utils/apiClient'
+import type { NextPage } from 'next'
 
-const Test = () => {
+const Yumemi:NextPage = () => {
   const { data: data } = useAspidaSWR(apiClient.test)
   return (
     <div>
@@ -10,4 +11,4 @@ const Test = () => {
   )
 }
 
-export default Test
+export default Yumemi
